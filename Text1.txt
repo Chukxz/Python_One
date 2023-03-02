@@ -1,2 +1,0 @@
-Hello this is a test text file and I want to open it with python. Well let's see how it all goes.
-You know I love programming, so yeah hurray let's open the file right now shall we?
