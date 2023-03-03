@@ -70,7 +70,7 @@ def cond5():
     pag.sleep(5)
     msg = "VS Code exited"
     tkint(msg)
-    pag.sleep()
+    pag.sleep(1)
     pag.moveTo(88,750)
     pag.sleep(1)
     pag.click(88,750,button='PRIMARY',duration=0.5)
