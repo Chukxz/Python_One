@@ -153,11 +153,11 @@ def construct():
         print("type -h or --help to see guide.")
         
     if(val=="-h"):
-        print("Value = ['min -vscode', 'exit -vscode'] & '--n' | '' , State = ['open', 'closed'] , Terminal = ['vsct', 'cmdt']")
+        print("Value = ['min -vscode', 'exit -vscode'] & '--n' | '' , State = ['minimized', 'maximized'] , Terminal = ['vsct', 'cmdt']")
         print("type --help for more details.")
 
     if(val=="--help"):
-        print("Value = ['min -vscode', 'exit -vscode'] & '--n' | '' , State = ['open', 'closed']  , Terminal = ['vsct', 'cmdt']")
+        print("Value = ['min -vscode', 'exit -vscode'] & '--n' | '' , State = ['minimized', 'maximized']  , Terminal = ['vsct', 'cmdt']")
         print("min -vscode: Minimize Visual Studio Code Window, (if window is minimized first maximize then minimize).")
         print("exit -vscode: Terminate Visual Studio Code Window, (if window is minimized first maximize then exit).")
         print("--n: [<Val><" ">] & ['--n' | ''] Reinitialize new Command Prompt after operation.")
