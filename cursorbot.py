@@ -151,16 +151,16 @@ def construct():
     if(val=="help" or val=="-help"):
         print("command not found, did you mean '--help'")
         print("type -h or --help to see guide.")
-
+        
     if(val=="-h"):
-        print("Value = ['min -vscode', 'cls -vscode'] , State = ['open', 'closed'] & '--n' , Terminal = ['vsct', 'cmdt']")
+        print("Value = ['min -vscode', 'exit -vscode'] & '--n' | '' , State = ['open', 'closed'] , Terminal = ['vsct', 'cmdt']")
         print("type --help for more details.")
 
     if(val=="--help"):
-        print("Value = ['min -vscode', 'cls -vscode'] , State = ['open', 'closed'] & '--n' , Terminal = ['vsct', 'cmdt']")
+        print("Value = ['min -vscode', 'exit -vscode'] & '--n' | '' , State = ['open', 'closed']  , Terminal = ['vsct', 'cmdt']")
         print("min -vscode: Minimize Visual Studio Code Window, (if window is minimized first maximize then minimize).")
         print("exit -vscode: Terminate Visual Studio Code Window, (if window is minimized first maximize then exit).")
-        print("--n: [<Val><" ">] & ['--r' | ''] Reinitialize new Command Prompt after operation.")
+        print("--n: [<Val><" ">] & ['--n' | ''] Reinitialize new Command Prompt after operation.")
         print("minimized: Indicate if Visual Studio Code Window is minimized in the background.")
         print("maximized: Indicate if Visual Studio Code Window is maximized in the background.")
         print("vsct: Visual Studio Code Terminal.")
