@@ -22,6 +22,7 @@ def cond1():
     pag.click(1251,10,button="PRIMARY",duration=0.5)
     pag.sleep(1)
     msg = "VS Code minimized"
+    pag.moveTo(795,745,duration=0.5)
     tkint(msg)
     pag.sleep(1)
     pag.moveTo(88,750)
@@ -37,6 +38,7 @@ def cond2():
     pag.click(1251,10,button="PRIMARY",duration=0.5)
     pag.sleep(1)
     msg = "VS Code minimized"
+    pag.moveTo(795,745,duration=0.5)
     tkint(msg)
     pag.sleep(1)
     pag.moveTo(88,750)
@@ -50,6 +52,7 @@ def cond3():
     pag.click(1251,10,button="PRIMARY",duration=0.5)
     pag.sleep(1)
     msg = "VS Code minimized"
+    pag.moveTo(795,745,duration=0.5)
     tkint(msg)
     pag.sleep(1)
 
@@ -59,6 +62,7 @@ def cond4():
     pag.click(1251,10,button="PRIMARY",duration=0.5)
     pag.sleep(1)
     msg = "VS Code minimized"
+    pag.moveTo(795,745,duration=0.5)
     tkint(msg)
     pag.sleep(1)
     pag.click(748,745,button="PRIMARY",duration=0.5)
@@ -69,6 +73,7 @@ def cond5():
     pag.click(1342,10,button="PRIMARY",duration=0.5)
     pag.sleep(5)
     msg = "VS Code exited"
+    pag.moveTo(795,745,duration=0.5)
     tkint(msg)
     pag.sleep(1)
     pag.moveTo(88,750)
@@ -84,6 +89,7 @@ def cond6():
     pag.click(1342,10,button="PRIMARY",duration=0.5)
     pag.sleep(5)
     msg = "VS Code exited"
+    pag.moveTo(795,745,duration=0.5)
     tkint(msg)
     pag.sleep(1)
     pag.moveTo(88,750)
@@ -97,6 +103,7 @@ def cond7():
     pag.click(1342,10,button="PRIMARY",duration=0.5)
     pag.sleep(5)
     msg = "VS Code exited"
+    pag.moveTo(795,745,duration=0.5)
     tkint(msg)
     pag.sleep(1)
     pag.click(748,745,button="PRIMARY",duration=0.5)
@@ -109,6 +116,7 @@ def cond8():
     pag.click(1342,10,button="PRIMARY",duration=0.5)
     pag.sleep(5)
     msg = "VS Code exited"
+    pag.moveTo(795,745,duration=0.5)
     tkint(msg)
     pag.sleep(1)
     pag.click(748,745,button="PRIMARY",duration=0.5)
@@ -127,7 +135,8 @@ def construct():
         Minimize VSCode - x : 1251, y : 10;\n
         Close VSCcode -x : 1342, y : 10;\n
         Type In Windows Search Bar - x : 88, y : 750;\n
-        Open Cmd - x : 750, Y : 740;\n
+        Open Cmd - x : 750, y : 740;\n
+        Tkinter Icon - x : 795, y : 740;\n
     """
 
     val = str(input("Value: "))
