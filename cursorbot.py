@@ -1,8 +1,7 @@
 import pyautogui as pag
 import tkinter as tk
 
-
-def Tkint(msg):
+def tkint(msg):
     root= tk.Tk()
 
     canvas1 = tk.Canvas(root, width = 300, height = 200)
@@ -19,11 +18,11 @@ def Tkint(msg):
 
     root.mainloop()
 
-def Cond1():
+def cond1():
     pag.click(1251,10,button="PRIMARY",duration=0.5)
     pag.sleep(1)
     msg = "VS Code minimized"
-    Tkint(msg)
+    tkint(msg)
     pag.sleep(1)
     pag.moveTo(88,750)
     pag.sleep(1)
@@ -32,14 +31,13 @@ def Cond1():
     pag.sleep(1)
     pag.moveTo(690,370,duration=0.5)
 
-
-def Cond2():
-    pag.click(656,744)
+def cond2():
+    pag.click(656,745)
     pag.sleep(2)
     pag.click(1251,10,button="PRIMARY",duration=0.5)
     pag.sleep(1)
     msg = "VS Code minimized"
-    Tkint(msg)
+    tkint(msg)
     pag.sleep(1)
     pag.moveTo(88,750)
     pag.sleep(1)
@@ -48,30 +46,30 @@ def Cond2():
     pag.sleep(1)
     pag.moveTo(690,370,duration=0.5)
 
-
-def Cond3():
+def cond3():
     pag.click(1251,10,button="PRIMARY",duration=0.5)
     pag.sleep(1)
     msg = "VS Code minimized"
-    Tkint(msg)
+    tkint(msg)
     pag.sleep(1)
-    pag.moveTo(690,370,duration=0.5)
 
-def Cond4():
-    pag.click(656,744)
+def cond4():
+    pag.click(656,745)
     pag.sleep(2)
     pag.click(1251,10,button="PRIMARY",duration=0.5)
     pag.sleep(1)
     msg = "VS Code minimized"
-    Tkint(msg)
+    tkint(msg)
+    pag.sleep(1)
+    pag.click(748,745,button="PRIMARY",duration=0.5)
     pag.sleep(1)
     pag.moveTo(690,370,duration=0.5)
 
-def Cond5():
+def cond5():
     pag.click(1342,10,button="PRIMARY",duration=0.5)
     pag.sleep(5)
     msg = "VS Code exited"
-    Tkint(msg)
+    tkint(msg)
     pag.sleep()
     pag.moveTo(88,750)
     pag.sleep(1)
@@ -80,13 +78,13 @@ def Cond5():
     pag.sleep(1)
     pag.moveTo(690,370,duration=0.5)
 
-def Cond6():
-    pag.click(656,744)
+def cond6():
+    pag.click(656,745)
     pag.sleep(2)
     pag.click(1342,10,button="PRIMARY",duration=0.5)
     pag.sleep(5)
     msg = "VS Code exited"
-    Tkint(msg)
+    tkint(msg)
     pag.sleep(1)
     pag.moveTo(88,750)
     pag.sleep(1)
@@ -95,26 +93,43 @@ def Cond6():
     pag.sleep(1)
     pag.moveTo(690,370,duration=0.5)
 
-def Cond7():
+def cond7():
     pag.click(1342,10,button="PRIMARY",duration=0.5)
     pag.sleep(5)
     msg = "VS Code exited"
-    Tkint(msg)
+    tkint(msg)
+    pag.sleep(1)
+    pag.click(748,745,button="PRIMARY",duration=0.5)
     pag.sleep(1)
     pag.moveTo(690,370,duration=0.5)
 
-def Cond8():
-    pag.click(656,744)
+def cond8():
+    pag.click(656,745)
     pag.sleep(2)
     pag.click(1342,10,button="PRIMARY",duration=0.5)
     pag.sleep(5)
     msg = "VS Code exited"
-    Tkint(msg)
+    tkint(msg)
+    pag.sleep(1)
+    pag.click(748,745,button="PRIMARY",duration=0.5)
     pag.sleep(1)
     pag.moveTo(690,370,duration=0.5)
 
+def construct():
+    
+    """
+        --- Properties ------ Coordintates (x,y) ----\n
+        Minimize Cmd - x : 1240, y : 50;\n
+        Close Cmd - x : 1330, y : 50;\n
+        Middle Of Screen - x : 690, y : 370;\n
+        Visual Studio Code Icon - x : 656, y : 745;\n
+        Command Prompt Icon - x : 748, y : 745;\n
+        Minimize VSCode - x : 1251, y : 10;\n
+        Close VSCcode -x : 1342, y : 10;\n
+        Type In Windows Search Bar - x : 88, y : 750;\n
+        Open Cmd - x : 750, Y : 740;\n
+    """
 
-def wow():
     val = str(input("Value: "))
     if(val!="-h" and val !="--help" and val!="--h" and val!="h" and val!="help" and val!="-help"):
         state = str(input("State: "))
@@ -129,125 +144,103 @@ def wow():
         print("type -h or --help to see guide.")
 
     if(val=="-h"):
-        print("Value = ['min -vscode', 'cls -vscode'] , State = ['open', 'closed'] & '--r' , Terminal = ['vsct', 'cmdt']")
+        print("Value = ['min -vscode', 'cls -vscode'] , State = ['open', 'closed'] & '--n' , Terminal = ['vsct', 'cmdt']")
         print("type --help for more details.")
 
     if(val=="--help"):
-        print("Value = ['min -vscode', 'cls -vscode'] , State = ['open', 'closed'] & '--r' , Terminal = ['vsct', 'cmdt']")
+        print("Value = ['min -vscode', 'cls -vscode'] , State = ['open', 'closed'] & '--n' , Terminal = ['vsct', 'cmdt']")
         print("min -vscode: Minimize Visual Studio Code Window, (if window is minimized first maximize then minimize).")
         print("exit -vscode: Terminate Visual Studio Code Window, (if window is minimized first maximize then exit).")
-        print("--r: [<Val><" ">] & ['--r' | ''] Reinitialize Command Prompt after operation.")
+        print("--n: [<Val><" ">] & ['--r' | ''] Reinitialize new Command Prompt after operation.")
         print("minimized: Indicate if Visual Studio Code Window is minimized in the background.")
         print("maximized: Indicate if Visual Studio Code Window is maximized in the background.")
-        print("vsct: Visual Studio Code Terminal")
-        print("cmdt: Command Prompt Terminal")
+        print("vsct: Visual Studio Code Terminal.")
+        print("cmdt: Command Prompt Terminal.")
 
-    if(val == "min -vscode --r"):
+    if(val == "min -vscode --n"):
         if(state == "maximized"):
             if(terminal=="cmdt"):
                 pag.sleep(0.5)
-                pag.click(1330,50,button="PRIMARY",duration=0.5)
+                pag.click(1240,50,button="PRIMARY",duration=0.5)
                 pag.sleep(0.5)
-                Cond1()
+                cond1()
             if(terminal=="vsct"):
                 pag.sleep(0.5)
-                Cond1()
+                cond1()
 
         if(state == "minimized"):
             if(terminal=="cmdt"):
                 pag.sleep(0.5)
-                pag.click(1330,50,button="PRIMARY",duration=0.5)
+                pag.click(1240,50,button="PRIMARY",duration=0.5)
                 pag.sleep(0.5)
-                Cond2()
+                cond2()
             if(terminal=="vsct"):
                 print("VS Code terminal cannot be used in minimized window.")
-
         
     if(val == "min -vscode"):
         if(state == "maximized"):
             if(terminal=="cmdt"):
                 pag.sleep(0.5)
-                pag.click(1330,50,button="PRIMARY",duration=0.5)
+                pag.click(1240,50,button="PRIMARY",duration=0.5)
                 pag.sleep(0.5)
-                Cond3()
+                cond3()
+                pag.click(748,745,button="PRIMARY",duration=0.5)
+                pag.sleep(1)
+                pag.moveTo(690,370,duration=0.5)                
             if(terminal=="vsct"):
                 pag.sleep(0.5)
-                Cond3()
+                cond3()
+                pag.moveTo(690,370,duration=0.5)                
 
         if(state == "minimized"):
             if(terminal=="cmdt"):
                 pag.sleep(0.5)
-                pag.click(1330,50,button="PRIMARY",duration=0.5)
+                pag.click(1240,50,button="PRIMARY",duration=0.5)
                 pag.sleep(0.5)
-                Cond4()
+                cond4()
             if(terminal=="vsct"):
                 print("VS Code terminal cannot be used in minimized window.")
 
-
-
-    if(val == "exit -vscode --r"):
+    if(val == "exit -vscode --n"):
         if(state == "maximized"):
             if(terminal=="cmdt"):
                 pag.sleep(0.5)
-                pag.click(1330,50,button="PRIMARY",duration=0.5)
+                pag.click(1240,50,button="PRIMARY",duration=0.5)
                 pag.sleep(0.5)
-                Cond5()
+                cond5()
             if(terminal=="vsct"):
                 pag.sleep(0.5)
-                Cond5()
+                pag.click(1342,10,button="PRIMARY",duration=0.5)
 
         if(state == "minimized"):
             if(terminal=="cmdt"):
                 pag.sleep(0.5)
-                pag.click(1330,50,button="PRIMARY",duration=0.5)
+                pag.click(1240,50,button="PRIMARY",duration=0.5)
                 pag.sleep(0.5)
-                Cond6()
+                cond6()
             if(terminal=="vsct"):
                 print("Vs Code terminal cannot be used in minimized window.")
-
-
-    
+  
     if(val == "exit -vscode"):
         if(state == "maximized"):
             if(terminal=="cmdt"):
                 pag.sleep(0.5)
-                pag.click(1330,50,button="PRIMARY",duration=0.5)
+                pag.click(1240,50,button="PRIMARY",duration=0.5)
                 pag.sleep(0.5)
-                Cond7()
+                cond7()
             if(terminal=="vsct"):
-                pag.sleep(0.5)
-                Cond7()
+                pag.click(1342,10,button="PRIMARY",duration=0.5)
 
         if(state == "minimized"):
             if(terminal=="cmdt"):
                 pag.sleep(0.5)
-                pag.click(1330,50,button="PRIMARY",duration=0.5)
+                pag.click(1240,50,button="PRIMARY",duration=0.5)
                 pag.sleep(0.5)
-                Cond8()
+                cond8()
             if(terminal=="vsct"):
                 print("Vs Code terminal cannot be used in minimized window.")
 
-wow()
-
-
-
-
-            
-
-"""
-minimize cmd - x:1240, y:52
-close cmd -x:1330, y:50
-Middle of screen - x:690, y:370
-Visual studio code icon - x: 656, y:744
-minimize vscode - x:1251, y:10
-close vscode -x:1342, y:10
-type in search - x:88, y:750
-open cmd - x:750, 740
-
-pag.click(x,y,2,0.1,1,0.05)
-pag.isShiftCharacter()
-pag.isValidKey()
-"""
+construct()
 
 
 
