@@ -1,7 +1,6 @@
 import pyautogui as pag
 import tkinter as tk
 
-
 def tkint(msg):
     root= tk.Tk()
 
