@@ -25,11 +25,11 @@ def cond1():
     pag.moveTo(795,745,duration=0.5)
     tkint(msg)
     pag.sleep(1)
-    pag.moveTo(88,750)
-    pag.sleep(1)
+    pag.moveTo(88,750,duration=0.5)
+    pag.sleep(2)
     pag.click(88,750,button='PRIMARY',duration=0.5)
     pag.keyDown("c");pag.sleep(0.2);pag.keyDown("m");pag.sleep(0.2);pag.keyDown("d");pag.sleep(0.2);pag.keyDown("enter");pag.keyUp("enter")
-    pag.sleep(1)
+    pag.sleep(2)
     pag.moveTo(690,370,duration=0.5)
 
 def cond2():
@@ -41,11 +41,11 @@ def cond2():
     pag.moveTo(795,745,duration=0.5)
     tkint(msg)
     pag.sleep(1)
-    pag.moveTo(88,750)
-    pag.sleep(1)
+    pag.moveTo(88,750,duration=0.5)
+    pag.sleep(2)
     pag.click(88,750,button='PRIMARY',duration=0.5)
     pag.keyDown("c");pag.sleep(0.2);pag.keyDown("m");pag.sleep(0.2);pag.keyDown("d");pag.sleep(0.2);pag.keyDown("enter");pag.keyUp("enter")
-    pag.sleep(1)
+    pag.sleep(2)
     pag.moveTo(690,370,duration=0.5)
 
 def cond3():
@@ -76,11 +76,11 @@ def cond5():
     pag.moveTo(795,745,duration=0.5)
     tkint(msg)
     pag.sleep(1)
-    pag.moveTo(88,750)
-    pag.sleep(1)
+    pag.moveTo(88,750,duration=0.5)
+    pag.sleep(2)
     pag.click(88,750,button='PRIMARY',duration=0.5)
     pag.keyDown("c");pag.sleep(0.2);pag.keyDown("m");pag.sleep(0.2);pag.keyDown("d");pag.sleep(0.2);pag.keyDown("enter");pag.keyUp("enter")
-    pag.sleep(1)
+    pag.sleep(2)
     pag.moveTo(690,370,duration=0.5)
 
 def cond6():
@@ -92,11 +92,11 @@ def cond6():
     pag.moveTo(795,745,duration=0.5)
     tkint(msg)
     pag.sleep(1)
-    pag.moveTo(88,750)
-    pag.sleep(1)
+    pag.moveTo(88,750,duration=0.5)
+    pag.sleep(2)
     pag.click(88,750,button='PRIMARY',duration=0.5)
     pag.keyDown("c");pag.sleep(0.2);pag.keyDown("m");pag.sleep(0.2);pag.keyDown("d");pag.sleep(0.2);pag.keyDown("enter");pag.keyUp("enter")
-    pag.sleep(1)
+    pag.sleep(2)
     pag.moveTo(690,370,duration=0.5)
 
 def cond7():
@@ -219,6 +219,13 @@ def construct():
                 cond5()
             if(terminal=="vsct"):
                 pag.sleep(0.5)
+                pag.moveTo(88,750,duration=0.5)
+                pag.sleep(2)
+                pag.click(88,750,button='PRIMARY',duration=0.5)
+                pag.keyDown("c");pag.sleep(0.2);pag.keyDown("m");pag.sleep(0.2);pag.keyDown("d");pag.sleep(0.2);pag.keyDown("enter");pag.keyUp("enter")
+                pag.sleep(2)
+                pag.click(656,745,button="PRIMARY",duration=0.5)
+                pag.sleep(2)
                 pag.click(1342,10,button="PRIMARY",duration=0.5)
 
         if(state == "minimized"):
@@ -238,6 +245,7 @@ def construct():
                 pag.sleep(0.5)
                 cond7()
             if(terminal=="vsct"):
+                pag.sleep(0.5)
                 pag.click(1342,10,button="PRIMARY",duration=0.5)
 
         if(state == "minimized"):
