@@ -1,3 +1,4 @@
+#Intro to Tkinter
 from tkinter import *
 
 root = Tk()
@@ -8,4 +9,4 @@ myLabel = Label(root,text="Hello World!")
 # Shoving it onto the screen
 myLabel.pack()
 
-root.mainLoop()
+root.mainloop()
