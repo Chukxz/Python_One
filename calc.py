@@ -53,13 +53,13 @@ def button_equals():
     second_number = e.get()
     e.delete(0,END)
     if math=="addition":
-        e.insert(0,f_num + int(second_number))
+        e.insert(0,f_num + float(second_number))
     if math=="subtraction":
-        e.insert(0,f_num - int(second_number))
+        e.insert(0,f_num - float(second_number))
     if math=="division":
-        e.insert(0,f_num / int(second_number))
+        e.insert(0,f_num / float(second_number))
     if math=="multiplication":
-        e.insert(0,f_num * int(second_number))
+        e.insert(0,f_num * float(second_number))
     
 
 
