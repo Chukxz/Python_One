@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+
+<body>
+    <svg width="200" height="100">
+            <mask id="svgmask1">
+                <circle cx="50" cy="50" r="40"
+                stroke="black" stroke-width="2" fill="blue"/>
+            </mask>
+        </svg>
+</body>
+
+</html>
