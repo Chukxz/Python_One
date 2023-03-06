@@ -8,6 +8,11 @@ e.grid(row=0, column=0, columnspan=3, padx=10, pady=10)
 
 # e.insert(0,"Enter YOur name")
 
+def no_Remainder(num):
+    n = int(num)
+    if num - n == 0: return n
+    else: return num
+
 def button_remove():
     e.delete(0,END)
 
@@ -53,13 +58,13 @@ def button_equals():
     second_number = e.get()
     e.delete(0,END)
     if math=="addition":
-        e.insert(0,f_num + float(second_number))
+        e.insert(0,no_Remainder(f_num + float(second_number)))
     if math=="subtraction":
-        e.insert(0,f_num - float(second_number))
+        e.insert(0,no_Remainder(f_num - float(second_number)))
     if math=="division":
-        e.insert(0,f_num / float(second_number))
+        e.insert(0,no_Remainder(f_num / float(second_number)))
     if math=="multiplication":
-        e.insert(0,f_num * float(second_number))
+        e.insert(0,no_Remainder(f_num * float(second_number)))
     
 
 
