@@ -12,20 +12,21 @@ my_img4 = ImageTk.PhotoImage(Image.open("myimgs.png"))
 my_img5 = ImageTk.PhotoImage(Image.open("the_green.jpg"))
 
 image_list = [my_img1,my_img2,my_img3,my_img4,my_img5]
+image_list_len = len(image_list)
 
 
 my_label = Label(image=my_img1)
 my_label.grid(row=0,column=0,columnspan=3)
 
 def forward(image_number):
-    global my_label, button_forward, button_back
+    global my_label, button_forward, button_back, image_list_len
 
     my_label.grid_forget()
     my_label = Label(image=image_list[image_number-1])
     button_forward = Button(root,text=">>",command=lambda:forward(image_number+1))
     button_back = Button(root,text="<<",command=lambda:back(image_number-1))
 
-    if(image_number == 5):
+    if(image_number == image_list_len):
         button_forward = Button(root,text=">>",state=DISABLED)
 
     my_label.grid(row=0,column=0,columnspan=3)
