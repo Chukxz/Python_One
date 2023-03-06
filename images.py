@@ -5,13 +5,12 @@ root = Tk()
 root.title("Learn Coding")
 root.iconbitmap("./Images/mytkico.ico")
 
-my_img1 = ImageTk.PhotoImage(Image.open("./Images/Quantum_gravity.png"))
-my_img2 = ImageTk.PhotoImage(Image.open("./Images/Quantum_mechanics_logo_1.jpg"))
-my_img3 = ImageTk.PhotoImage(Image.open("./Images/Quantum_mechanics_logo_2.png"))
-my_img4 = ImageTk.PhotoImage(Image.open("./Images/myimgs.png"))
-my_img5 = ImageTk.PhotoImage(Image.open("./Images/the_green.jpg"))
+my_img1 = ImageTk.PhotoImage(Image.open("./Images/Quantum_mechanics_logo_1.jpg"))
+my_img2 = ImageTk.PhotoImage(Image.open("./Images/Quantum_mechanics_logo_2.png"))
+my_img3 = ImageTk.PhotoImage(Image.open("./Images/myimgs.png"))
+my_img4 = ImageTk.PhotoImage(Image.open("./Images/the_green.jpg"))
 
-image_list = [my_img1,my_img2,my_img3,my_img4,my_img5]
+image_list = [my_img1,my_img2,my_img3,my_img4]
 image_list_len = len(image_list)
 
 my_label = Label(image=my_img1)
