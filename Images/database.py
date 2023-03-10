@@ -1,10 +1,9 @@
 from tkinter import *
-from PIL import ImageTk, Image
 import sqlite3
 
 root = Tk()
 root.title = ("Learn Coding")
-root.iconbitmap("./Images/mytkico.ico")
+root.iconbitmap("C:/Users/USER/Downloads/mytkico.ico")
 root.geometry("400x500")
 
 #Databases
@@ -15,7 +14,7 @@ conn = sqlite3.connect("address_book.db")
 #Create cursor - c
 c = conn.cursor()
 
-#Create table
+# Create table
 # c.execute("""CREATE TABLE addresses (
 #     first_name text,
 #     last_name text,
@@ -68,7 +67,7 @@ def edit():
     global editor
     editor = Tk()
     editor.title = ("Update a Record")
-    editor.iconbitmap("./Images/mytkico.ico")
+    editor.iconbitmap("C:/Users/USER/Downloads/mytkico.ico")
     editor.geometry("400x250")
     #Create a database or connect to one
     conn = sqlite3.connect("address_book.db")
@@ -127,7 +126,7 @@ def edit():
         address_editor.insert(0,record[2])
         city_editor.insert(0,record[3])
         state_editor.insert(0,record[4])
-        zipcode_editor.insert(0,record[5]) 
+        zipcode_editor.insert(0,record[5])
 
     #Create a Save Button To save edited record
     save_btn = Button(editor,text="Save Record",command=update)
@@ -136,16 +135,16 @@ def edit():
 
 #Create Submit Function For Database
 def submit():
- 
+
     #Create a database or connect to one
     conn = sqlite3.connect("address_book.db")
 
     #Create cursor - c
     c = conn.cursor()
 
-    #Insert Into Table 
+    #Insert Into Table
     c.execute("INSERT INTO addresses VALUES (:f_name, :l_name, :address, :city, :state, :zipcode)",
-              
+
     {
         'f_name': f_name.get(),
         'l_name': l_name.get(),
@@ -184,7 +183,7 @@ def query():
     # print_records = ''
 
     queryRecord = Tk()
-    queryRecord.iconbitmap("./Images/mytkico.ico")
+    queryRecord.iconbitmap("C:/Users/USER/Downloads/mytkico.ico")
     queryRecord.geometry("600x400")
 
     queryRecordFrame = LabelFrame(queryRecord,padx=20,pady=5)
@@ -229,7 +228,7 @@ def query():
     exit_query_btn.grid(row=rowstart,column=0,columnspan=6,ipadx=40)
 
 
-    
+
     # query_label = Label(root, text=print_records)
     # query_label.grid(row=12,column=0,columnspan=2)
 

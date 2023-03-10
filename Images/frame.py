@@ -2,7 +2,7 @@ from tkinter import *
 
 root = Tk()
 root.title("Learn Coding")
-root.iconbitmap("./Images/mytkico.ico")
+root.iconbitmap("C:/Users/USER/Downloads/mytkico.ico")
 
 frame = LabelFrame(root,padx=50,pady=50)
 frame.pack(padx=20,pady=20)

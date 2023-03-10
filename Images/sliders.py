@@ -2,7 +2,7 @@ from tkinter import *
 from PIL import ImageTk,Image
 
 root = Tk()
-root.iconbitmap("./Images/mytkico.ico")
+root.iconbitmap("C:/Users/USER/Downloads/mytkico.ico")
 root.geometry("400x400")
 
 def update():

@@ -5,7 +5,7 @@ from tkinter import filedialog
 
 
 root.title("Learn Coding")
-root.iconbitmap("./Images/mytkico.ico")
+root.iconbitmap("C:/Users/USER/Downloads/mytkico.ico")
 
 
 def open():

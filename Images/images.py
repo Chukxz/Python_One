@@ -3,7 +3,7 @@ from PIL import ImageTk, Image
 
 root = Tk()
 root.title("Learn Coding")
-root.iconbitmap("./Images/mytkico.ico")
+root.iconbitmap("C:/Users/USER/Downloads/mytkico.ico")
 
 my_img1 = ImageTk.PhotoImage(Image.open("./Images/Quantum_mechanics_logo_1.jpg"))
 my_img2 = ImageTk.PhotoImage(Image.open("./Images/Quantum_mechanics_logo_2.png"))

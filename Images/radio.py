@@ -2,7 +2,7 @@ from tkinter import *
 
 root = Tk()
 root.title("Learn Coding")
-root.iconbitmap("./Images/mytkico.ico")
+root.iconbitmap("C:/Users/USER/Downloads/mytkico.ico")
 
 # r=IntVar()
 # r.set(2)
